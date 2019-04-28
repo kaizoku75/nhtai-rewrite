@@ -77,6 +77,10 @@ class GalleryDetail extends Component{
                     </section>
                   <div>{this.props.book.num_pages} pages</div>
                   </div>
+                    <div class="buttons">
+						<a href="" class="btn btn-primary"><i class="fa fa-heart"></i> <span>Favorite <span class="nobold">({this.props.book.num_favorites})</span></span></a>
+					<a href="" id="download" class="btn btn-secondary"><i class="fa fa-download"></i> Download</a>
+				</div>
                 </div>
             </div>
         );
@@ -107,7 +111,8 @@ GalleryDetail.propTypes = {
             })
         }),
         tags:PropTypes.arrayOf(PropTypes.object),
-        num_pages:PropTypes.number
+        num_pages:PropTypes.number,
+        num_favorites:PropTypes.number
     })
 };
 
