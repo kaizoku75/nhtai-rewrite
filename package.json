@@ -1,0 +1,70 @@
+{
+    "name": "nhtai_rewriter",
+    "version": "2.3.2",
+    "description": "nHtai Rewrite.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "postinstall": "webpack -p --mode production",
+        "webpack:dev": "webpack-dev-server --mode development --open --port $PORT --host $IP --public $C9_HOSTNAME",
+        "dev:server": "nodemon index.js",
+        "dev:static": "webpack --mode development --watch",
+        "build": "rmdir /s/q dist & webpack -p --mode production",
+        "test": "jest",
+        "test:watch": "jest --watchAll",
+        "lint": "eslint --ext .js --ext .jsx src"
+    },
+    "jest": {
+        "moduleNameMapper": {
+            "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js"
+        },
+        "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-eslint": "^9.0.0",
+        "babel-loader": "^7.1.5",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "clean-webpack-plugin": "^0.1.19",
+        "css-loader": "^1.0.0",
+        "enzyme": "^3.6.0",
+        "enzyme-adapter-react-16": "^1.5.0",
+        "eslint": "^5.5.0",
+        "eslint-plugin-jest": "^21.22.0",
+        "eslint-plugin-react": "^7.11.1",
+        "extract-text-webpack-plugin": "^4.0.0-beta.0",
+        "file-loader": "^2.0.0",
+        "html-webpack-plugin": "^3.2.0",
+        "image-webpack-loader": "^4.5.0",
+        "jest": "^23.5.0",
+        "moxios": "^0.4.0",
+        "script-ext-html-webpack-plugin": "^2.0.1",
+        "style-loader": "^0.23.0",
+        "url-loader": "^1.1.1",
+        "webpack": "^4.17.2",
+        "webpack-cli": "^3.1.0",
+        "webpack-dev-server": "^3.1.7"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "compression": "^1.7.3",
+        "disqus-react": "*",
+        "express": "^4.16.3",
+        "jquery": "^3.4.0",
+        "lodash": "^4.17.10",
+        "prop-types": "^15.6.2",
+        "react": "^16.5.0",
+        "react-dom": "^16.5.0",
+        "react-ga": "^2.5.7",
+        "react-helmet": "^5.2.0",
+        "react-lazyload": "^2.3.0",
+        "react-load-image": "^0.1.6",
+        "react-redux": "^5.0.7",
+        "react-router-dom": "^4.3.1",
+        "redux": "^4.0.0",
+        "redux-promise": "^0.6.0",
+        "request": "^2.88.0"
+    }
+}
