@@ -9,7 +9,7 @@
         "webpack:dev": "webpack-dev-server --mode development --open --port $PORT --host $IP --public $C9_HOSTNAME",
         "dev:server": "nodemon index.js",
         "dev:static": "webpack --mode development --watch",
-        "build": "rmdir /s/q dist & webpack -p --mode production",
+        "build": "webpack -p --mode production",
         "test": "jest",
         "test:watch": "jest --watchAll",
         "lint": "eslint --ext .js --ext .jsx src"
