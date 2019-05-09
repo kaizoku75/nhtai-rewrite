@@ -79,7 +79,7 @@ class GalleryDetail extends Component{
                   </div>
                     <div class="buttons">
 						<a href="" class="btn btn-primary"><i class="fa fa-heart"></i> <span>Favorite <span class="nobold">({this.props.book.num_favorites})</span></span></a>
-					<a href="" id="download" class="btn btn-secondary"><i class="fa fa-download"></i> Download</a>
+					<a href={"https://dl.nhent.ai/dl/" + this.props.id} id="download" class="btn btn-secondary"><i class="fa fa-download"></i> Download</a>
 				</div>
                 </div>
             </div>
