@@ -1,8 +1,10 @@
 # nHtai-Rewrite ![Build Status](https://travis-ci.org/py7hon/nhtai-rewrite.svg?branch=master)
 
-```bat
-X:\nhentai\nhtai> npm install -g yarn
-X:\nhentai\nhtai> yarn install
-X:\nhentai\nhtai> yarn build
-X:\nhentai\nhtai> yarn start
+```console
+npm install
+npm run build
+npm start
 ```
+License
+---
+nHtai-rewrite is currently under [**Giant Penis License (GPL)**](http://giant-penis-license.org) which is a deformed M.I.T license including penis text art.
