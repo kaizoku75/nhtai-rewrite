@@ -101,7 +101,7 @@ class GalleryList extends Component {
                 <div class="gallery">
                 <div class="caption">{galleryData.title.english}</div>
                   <LazyLoad height="100%" once >
-                    <ImageLoader src={`https://kontol.nhent.ai/galleries/${galleryData.media_id}/thumb.${cover_type[this_type]}`} className="item-img" />
+                    <ImageLoader src={`https://t.nhent.ai/galleries/${galleryData.media_id}/thumb.${cover_type[this_type]}`} className="item-img" />
                   </LazyLoad>
                 </div>
             </Link>
@@ -126,17 +126,11 @@ class GalleryList extends Component {
             <div id="notification" class="alert alert-info alert-dismissible text-center" role="alert">
         				<strong>Update (24-Apr):</strong> Migration to OVH Server and Redesign like <strong>nHentai</strong>
             </div>
-            <div class="iklan" height="90" width="728">
-              <a href="https://onnime.me"><img src="https://cdn.onnime.me/uploads/2019/04/banner-728x90.gif"></img></a>
-            </div>
                 <ButtonGroup page={this.state.current_page} query={this.state.query} />
                 <div class="container index-container">
                     {this.state.data.map(this.renderGallery)}
                 </div>
                 <ButtonGroup page={this.state.current_page} query={this.state.query} />
-            <div class="iklan" height="90" width="728">
-              <a href="https://doramaku.me"><img src="https://drakormu.com/wp-content/uploads/2018/06/doramaku.jpg"></img></a>
-            </div>
             </div>
         );
     }
