@@ -24,7 +24,7 @@ class GalleryDetail extends Component{
         // make cover image scr url
         const cover_type = {j:"jpg",p:"png"};
         const this_type = this.props.book.images.cover.t;
-        return `https://kontol.nhent.ai/galleries/${this.props.book.media_id}/cover.${cover_type[this_type]}`;
+        return `https://t.nhent.ai/galleries/${this.props.book.media_id}/cover.${cover_type[this_type]}`;
     }
 
     parseTagsContent(tag_entry){
