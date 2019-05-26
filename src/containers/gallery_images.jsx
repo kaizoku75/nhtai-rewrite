@@ -21,7 +21,7 @@ class GalleryImages extends Component {
             <div class="thumb-container" key={index} >
                 <Link to={{ pathname: `/g/${this.props.id}/${index + 1}`, state: { media_id: this.props.media_id, images: this.props.images, backpath: this.props.backpath } }} >
                     <LazyLoad height="100%" once >
-                        <ImageLoader src={`https://kontol.nhent.ai/galleries/${this.props.media_id}/${index + 1}t.${image_type[this_type]}`} />
+                        <ImageLoader src={`https://t.nhent.ai/galleries/${this.props.media_id}/${index + 1}t.${image_type[this_type]}`} />
                     </LazyLoad>
                 </Link>
             </div>
