@@ -112,7 +112,7 @@ class GalleryReader extends Component {
             const this_type = this.state.images[page - 1].t;
 
             let image = new Image();
-            image.src = `https://i.bakaa.me/galleries/${this.state.media_id}/${page}.${image_type[this_type]}`;
+            image.src = `https://cdn.nhent.ai/galleries/${this.state.media_id}/${page}.${image_type[this_type]}`;
             this.preloadArr.unshift(image);
             page = current_page + this.preloadArr.length + 1;
         }
