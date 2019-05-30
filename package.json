@@ -48,7 +48,7 @@
         "webpack-dev-server": "3.4.1"
     },
     "dependencies": {
-        "axios": "^0.18.0",
+        "axios": "^0.19.0",
         "compression": "^1.7.3",
         "disqus-react": "*",
         "express": "^4.16.3",
