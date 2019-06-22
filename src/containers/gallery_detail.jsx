@@ -70,19 +70,29 @@ class GalleryDetail extends Component{
                 </div>
                 <div id="info-block">
                   <div id="info">
-                    <h1>{this.props.book.title.english}</h1>
-                    <h2>{this.props.book.title.japanese}</h2>
-                    <section id="tags">
-                    <div class="tag-container field-name ">{Object.entries(this.renderTags(this.props.book.tags)).map(this.parseTagsContent)}</div>
-                    </section>
-                  <div>{this.props.book.num_pages} pages</div>
+                      <h1>{this.props.book.title.english}</h1>
+                      <h2>{this.props.book.title.japanese}</h2>
+                      <section id="tags">
+                        <div class="tag-container field-name ">
+                          {
+                            Object.entries(this.renderTags(this.props.book.tags)).map(this.parseTagsContent)
+                          }
+                        </div>
+                      </section>
+                    <div>
+                      {
+                        this.props.book.num_pages
+                      } pages
+                    </div>
                   </div>
                     <div class="buttons">
-						<a href="" class="btn btn-primary"><i class="fa fa-heart"></i> <span>Favorite <span class="nobold">({this.props.book.num_favorites})</span></span></a>
-					<a href={"https://dl.nhent.ai/dl/" + this.props.id} id="download" class="btn btn-secondary"><i class="fa fa-download"></i> Download</a>
-				</div>
+                      <a href="" class="btn btn-primary"><i class="fa fa-heart"></i>
+                      <span>Favorite <span class="nobold">({this.props.book.num_favorites})</span></span>
+                      </a>
+                      <a href={"https://dl.nhent.ai/dl/" + this.props.id} id="download" class="btn btn-secondary"><i class="fa fa-download"></i> Download</a>
+                    </div>
                 </div>
-            </div>
+              </div>
         );
     }
 }
